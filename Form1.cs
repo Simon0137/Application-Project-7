@@ -6,7 +6,7 @@ public partial class Form1 : Form
 
     public Form1()
     {
-        const string PATH = "../../../correct_answers.file";
+        const string PATH = "correct_answers.file";
         _correctAnswers = new char[20];
 
         using (var sr = new StreamReader(PATH))
@@ -27,7 +27,7 @@ public partial class Form1 : Form
 
     private void button1_Click(object sender, EventArgs e)
     {
-        const string PATH = "../../../text.file";
+        const string PATH = "text.file";
         var studentAnswers = new char[20];
         var correctAnswers = 0;
 
